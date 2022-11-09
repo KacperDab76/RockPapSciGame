@@ -1,0 +1,22 @@
+.info
+{
+        text-align: center;
+        color: blueviolet;
+}
+
+#tiles
+{
+        display: flex;
+        justify-content: center;
+}
+
+.tile
+{
+        width: 300px;
+        height: 300px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        color: green;
+        background-color: bisque;
+        margin: 20px;
+}
