@@ -1,4 +1,28 @@
 
+// function hide all panels and shows only one given by index of game array 
+function showGame (i) 
+{
+        let game = ["lab8","lab9"];
+
+        if (i>=0 && i<game.length){
+                // alert(game[i]);
+                for (let j=0;j<game.length;j++){
+                        if (i==j){
+                        // show panel 
+                                document.getElementById(game[j]).style.display = "block";
+                        }
+                        else {
+                        // hide panel 
+                                document.getElementById(game[j]).style.display = "none";
+                        }
+                }
+
+        }
+        else 
+        {
+                alert("Error: out of bounds")
+        }
+}
 function choice(n){
         // 1 - Rock
         // 2 - paper

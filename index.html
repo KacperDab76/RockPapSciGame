@@ -7,17 +7,34 @@
 
 </head>
 <body>
-        <div class="info">
+        <div id="sat-nav" class="info">
                 <h1>Do you wanna play Rock Paper Scissors ? </h1><br>
-                <h3><strong>Make your choice, press a tile</strong></h3>
+                <button onclick="showGame(0);">Lab 8</button>
+                <button onclick="showGame(1);">Lab 9</button>
         </div>
-        <div id="tiles">
-
+        <div class="info invisible" id="lab8">
                 
-                <button class="tile" id="game1" onclick="choice(1)">Rock</button>
-                <button class="tile" id="game2" onclick="choice(2)">Paper</button>
-                <button class="tile" id="game3" onclick="choice(3)">Scissors</button>
+                <h3><strong>Make your choice, press a tile</strong></h3>
+        
+                <div id="tiles">
+
+                        
+                        <button class="tile" id="game1" onclick="choice(1);">Rock</button>
+                        <button class="tile" id="game2" onclick="choice(2);">Paper</button>
+                        <button class="tile" id="game3" onclick="choice(3);">Scissors</button>
+                </div>
         </div>
+        <div class="info invisible" id="lab9">
+
+                <h3><strong>If you want to play press GAME button</strong></h3>
+        
+                <div id="tiles" >
+
+                        
+                        <button class="tile" id="game1" onclick="game()">GAME</button>
+
+                </div>
+        </div>        
         <div id="result" class="info"></div>
         <script src="rpsgame.js"></script>
 </body>
